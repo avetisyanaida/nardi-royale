@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Nardi Royale Android game.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#17100b">
+  <title>Privacy Policy | Nardi Royale</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --page: #120c08;
+      --page-soft: #1b120c;
+      --card: rgba(40, 27, 17, 0.94);
+      --card-soft: rgba(57, 39, 24, 0.72);
+      --gold: #d8ad60;
+      --gold-light: #f1d79b;
+      --ink: #f8f1e7;
+      --muted: #c9bba8;
+      --line: rgba(216, 173, 96, 0.26);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background:
+        radial-gradient(circle at 12% 2%, rgba(164, 105, 45, 0.18), transparent 32rem),
+        radial-gradient(circle at 88% 16%, rgba(216, 173, 96, 0.10), transparent 24rem),
+        linear-gradient(135deg, var(--page), var(--page-soft) 50%, #0c0806);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--gold-light);
+      text-decoration-color: rgba(241, 215, 155, 0.45);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover { color: #fff0c7; }
+
+    .shell {
+      width: min(100% - 36px, 920px);
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(13, 9, 6, 0.72);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+    }
+
+    .mark {
+      width: 42px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(241, 215, 155, 0.55);
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      letter-spacing: 0;
+      box-shadow: inset 0 0 0 5px rgba(216, 173, 96, 0.06);
+    }
+
+    main { padding: 78px 0 86px; }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--gold);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.18;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 5rem);
+      font-weight: 600;
+      letter-spacing: -0.045em;
+    }
+
+    .date {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .summary {
+      margin: 42px 0;
+      padding: 26px 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(76, 50, 29, 0.68), rgba(42, 28, 18, 0.68));
+      box-shadow: var(--shadow);
+    }
+
+    .summary strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+    }
+
+    .summary p { margin: 0; color: #e4d7c6; }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 0 42px;
+      color: #e9ddce;
+      font-size: 1.08rem;
+    }
+
+    .policy {
+      counter-reset: section;
+      display: grid;
+      gap: 16px;
+    }
+
+    .policy section {
+      counter-increment: section;
+      padding: 28px;
+      border: 1px solid rgba(216, 173, 96, 0.18);
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: 0 15px 38px rgba(0, 0, 0, 0.18);
+    }
+
+    .policy h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px;
+      font-size: clamp(1.38rem, 3vw, 1.75rem);
+      font-weight: 600;
+    }
+
+    .policy h2::before {
+      content: counter(section, decimal-leading-zero);
+      color: var(--gold);
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
+    .policy p { margin: 0; color: #d8ccbd; }
+
+    .contact {
+      margin-top: 38px;
+      padding: 38px 30px;
+      border: 1px solid rgba(216, 173, 96, 0.38);
+      border-radius: 18px;
+      background: linear-gradient(145deg, rgba(86, 57, 32, 0.68), rgba(38, 25, 16, 0.94));
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.65rem, 4vw, 2.25rem);
+      font-weight: 600;
+    }
+
+    .contact p { margin: 0; color: var(--muted); }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 11px 18px;
+      border: 1px solid rgba(241, 215, 155, 0.55);
+      border-radius: 999px;
+      color: var(--gold-light);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 28px 0 36px;
+      border-top: 1px solid var(--line);
+      color: #9f907f;
+      font-size: 0.86rem;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .shell { width: min(100% - 24px, 920px); }
+      main { padding: 54px 0 62px; }
+      .brand { min-height: 68px; font-size: 0.9rem; }
+      .mark { width: 38px; }
+      .summary, .policy section { padding: 22px 20px; }
+      .policy h2 { align-items: flex-start; }
+      .contact { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <a class="brand" href="/" aria-label="Nardi Royale home">
+        <span class="mark" aria-hidden="true">NR</span>
+        <span>NARDI ROYALE</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <p class="eyebrow">Nardi Royale</p>
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective date: July 31, 2026</p>
+
+      <aside class="summary" aria-label="Privacy summary">
+        <p class="eyebrow">At a glance</p>
+        <strong>Your game stays on your device.</strong>
+        <p>No account is required. The game uses Google AdMob for advertisements, and game progress is stored locally.</p>
+      </aside>
+
+      <p class="intro">This Privacy Policy explains how Nardi Royale handles information when you use the Android game. By using the game, you acknowledge the practices described below.</p>
+
+      <div class="policy">
+        <section>
+          <h2>Information we process</h2>
+          <p>Nardi Royale does not require an account and does not ask for your name, email address, contacts, or payment information. Game progress, virtual coins, settings, and statistics are stored locally on your device.</p>
+        </section>
+
+        <section>
+          <h2>Advertising and third-party services</h2>
+          <p>The game uses Google AdMob to display advertisements. Google and its partners may process device and app identifiers (including the advertising ID), IP address, approximate location derived from the IP address, ad interactions, and diagnostic information. This data may be used to deliver and measure ads, limit how often an ad is shown, prevent fraud, and improve advertising services. Learn more in the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses information for advertising</a>.</p>
+        </section>
+
+        <section>
+          <h2>Sharing and sale of data</h2>
+          <p>We do not sell personal information. Information needed to provide ads may be shared with Google AdMob and its advertising partners under their own privacy terms.</p>
+        </section>
+
+        <section>
+          <h2>Data retention and your choices</h2>
+          <p>Local game data remains on your device until you clear the app data or uninstall the game. Data processed by Google is retained according to Google's policies. You can manage ad personalization in your Google account and Android privacy settings. You can also reset or delete your advertising ID, clear Nardi Royale's app data, or uninstall the game.</p>
+        </section>
+
+        <section>
+          <h2>Children</h2>
+          <p>Nardi Royale is not directed to children under 13. If you believe that a child has provided personal information through the game, contact us so we can review the matter.</p>
+        </section>
+
+        <section>
+          <h2>Security</h2>
+          <p>We use reasonable measures to protect information. However, no method of electronic storage or transmission is completely secure.</p>
+        </section>
+
+        <section>
+          <h2>Changes to this policy</h2>
+          <p>We may update this policy when the game or legal requirements change. The current version and effective date will always be available on this page.</p>
+        </section>
+      </div>
+
+      <section class="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Questions about privacy?</h2>
+        <p>Email us and we will get back to you.</p>
+        <a href="mailto:gamesmoney93@gmail.com">gamesmoney93@gmail.com</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <p>© 2026 Nardi Royale</p>
+      <a href="mailto:gamesmoney93@gmail.com">gamesmoney93@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
